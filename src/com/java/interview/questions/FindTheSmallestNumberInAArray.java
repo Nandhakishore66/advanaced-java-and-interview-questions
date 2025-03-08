@@ -30,6 +30,21 @@ public class FindTheSmallestNumberInAArray {
         System.out.println(max);
     }
 
+        public void secondSmallest() {
+        //int [] arrays = {3,4,2,8,6,9};
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
+        for (int i=0; i<arrays.length; i++) {
+            if(arrays[i] < smallest){
+                smallest = arrays[i];
+            }
+            if(arrays[i]>smallest && arrays[i]<secondSmallest){
+                secondSmallest=arrays[i];
+            }
+        }
+        System.out.println(secondSmallest);
+    }
+
     public void usingArrays() {
         Arrays.sort(arrays); // Sort fun will convert the given array into ascending order
         //Now if we get the 0th position it will print the min value
