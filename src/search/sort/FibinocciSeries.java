@@ -13,9 +13,9 @@ public class FibinocciSeries {
         length = input.nextInt();
         for(int i=0; i<length; i++){
             System.out.println(num1);
-            nextNum=num1+num2;
             num1=num2;
             num2=nextNum;
+            nextNum=num1+num2;
         }
     }
 }
